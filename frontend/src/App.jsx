@@ -18,7 +18,7 @@ function App() {
     <main className="shell">
       <nav className="nav">
         <span className="brand">
-          DEPLOYABLE-EXPRESS-REACT<span>/</span>
+          DEPLOYABLE EXPRESS REACT<span>/</span>
         </span>
         <span className="nav-meta">EXPRESS + REACT / 2026</span>
       </nav>
