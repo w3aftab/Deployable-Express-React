@@ -1,0 +1,218 @@
+:root {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #f4f0e8;
+  background: #13201d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+a {
+  color: inherit;
+}
+.shell {
+  min-height: 100svh;
+  padding: 28px clamp(24px, 6vw, 96px) 24px;
+  background:
+    radial-gradient(circle at 78% 12%, #31504a 0, transparent 28%),
+    linear-gradient(135deg, #13201d 0%, #1b2c28 56%, #253b34 100%);
+  overflow: hidden;
+}
+.nav,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b9c5bb;
+  font:
+    11px/1.2 "Courier New",
+    monospace;
+  letter-spacing: 1.2px;
+}
+.brand {
+  color: #f4f0e8;
+  font:
+    bold 16px/1 Georgia,
+    serif;
+  letter-spacing: 0;
+}
+.brand span {
+  color: #d6f16a;
+}
+.nav-meta {
+  opacity: 0.72;
+}
+.hero {
+  max-width: 850px;
+  padding: clamp(94px, 16vh, 180px) 0 120px;
+  animation: appear 0.8s ease-out both;
+}
+.eyebrow,
+.signal-index {
+  color: #d6f16a;
+  font:
+    11px/1.2 "Courier New",
+    monospace;
+  letter-spacing: 1.5px;
+}
+h1 {
+  margin: 22px 0 26px;
+  font:
+    normal clamp(58px, 10vw, 138px)/0.88 Georgia,
+    serif;
+  letter-spacing: 0;
+}
+.hero h1 em {
+  color: #d6f16a;
+  font-style: italic;
+}
+.lede {
+  max-width: 410px;
+  color: #c3cec5;
+  font:
+    17px/1.55 "Courier New",
+    monospace;
+}
+.hero-actions {
+  display: flex;
+  gap: 24px;
+  margin-top: 38px;
+  align-items: center;
+}
+.button {
+  font:
+    12px/1 "Courier New",
+    monospace;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.button span {
+  margin-left: 14px;
+  font-size: 16px;
+}
+.button-primary {
+  padding: 15px 18px;
+  color: #13201d;
+  background: #d6f16a;
+}
+.button-quiet {
+  color: #d6f16a;
+  border-bottom: 1px solid #d6f16a;
+  padding-bottom: 7px;
+}
+.signal-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  border-top: 1px solid #71847a;
+  border-bottom: 1px solid #71847a;
+  animation: appear 0.8s 0.15s ease-out both;
+}
+.signal {
+  min-height: 190px;
+  padding: 25px 26px 25px 0;
+  border-right: 1px solid #71847a;
+}
+.signal + .signal {
+  padding-left: 26px;
+}
+.signal:last-child {
+  border-right: 0;
+}
+.signal strong {
+  display: block;
+  margin: 34px 0 10px;
+  color: #f4f0e8;
+  font:
+    26px Georgia,
+    serif;
+}
+.signal h2 {
+  display: inline-block;
+  margin: 34px 0 10px;
+  font:
+    26px Georgia,
+    serif;
+}
+.signal p {
+  max-width: 220px;
+  color: #b9c5bb;
+  font:
+    12px/1.55 "Courier New",
+    monospace;
+}
+.signal-main {
+  position: relative;
+}
+.status-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 14px;
+  border-radius: 50%;
+  background: #e19b54;
+}
+.status-dot.is-live {
+  background: #d6f16a;
+  box-shadow: 0 0 14px #d6f16a;
+}
+footer {
+  padding-top: 20px;
+  color: #83948a;
+}
+footer a {
+  color: #d6f16a;
+  text-decoration: none;
+  border-bottom: 1px solid #d6f16a;
+  padding-bottom: 4px;
+}
+footer a span {
+  margin-left: 6px;
+  font-size: 14px;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 700px) {
+  .nav-meta {
+    display: none;
+  }
+  .hero {
+    padding: 100px 0 80px;
+  }
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .signal-grid {
+    grid-template-columns: 1fr;
+  }
+  .signal,
+  .signal + .signal {
+    min-height: auto;
+    padding: 24px 0;
+    border-right: 0;
+    border-bottom: 1px solid #71847a;
+  }
+  .signal:last-child {
+    border-bottom: 0;
+  }
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
