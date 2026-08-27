@@ -33,9 +33,14 @@ function App() {
           A focused full-stack starting point for shipping useful software
           without losing the plot.
         </p>
+        <p className="hero-description">
+          Start with a production-minded foundation: React and Vite power the
+          interface, Express handles the API and static delivery, and the
+          included Render setup gets your next idea online with less ceremony.
+        </p>
         <div className="hero-actions">
           <a
-            className="button button-primary"
+            className="button button-quiet"
             href="https://expressjs.com/"
             target="_blank"
             rel="noreferrer"
@@ -49,6 +54,14 @@ function App() {
             rel="noreferrer"
           >
             Read React docs <span>↗</span>
+          </a>
+          <a
+            className="button button-primary"
+            href="https://github.com/w3aftab/Deployable-Express-React/archive/refs/heads/main.zip"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download template <span aria-hidden="true">↓</span>
           </a>
         </div>
       </section>

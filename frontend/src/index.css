@@ -1,7 +1,7 @@
 :root {
   font-family: Georgia, "Times New Roman", serif;
   color: #f4f0e8;
-  background: #13201d;
+  background: #071827;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,8 +20,8 @@ a {
   min-height: 100svh;
   padding: 28px clamp(24px, 6vw, 96px) 24px;
   background:
-    radial-gradient(circle at 78% 12%, #31504a 0, transparent 28%),
-    linear-gradient(135deg, #13201d 0%, #1b2c28 56%, #253b34 100%);
+    radial-gradient(circle at 78% 12%, #16465c 0, transparent 28%),
+    linear-gradient(135deg, #071827 0%, #0c2638 56%, #12384a 100%);
   overflow: hidden;
 }
 .nav,
@@ -29,7 +29,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #b9c5bb;
+  color: #b8c8cc;
   font:
     11px/1.2 "Courier New",
     monospace;
@@ -74,9 +74,17 @@ h1 {
 }
 .lede {
   max-width: 410px;
-  color: #c3cec5;
+  color: #c3d1d4;
   font:
     17px/1.55 "Courier New",
+    monospace;
+}
+.hero-description {
+  max-width: 520px;
+  margin: 18px 0 0;
+  color: #9eb5bd;
+  font:
+    13px/1.7 "Courier New",
     monospace;
 }
 .hero-actions {
@@ -98,7 +106,7 @@ h1 {
 }
 .button-primary {
   padding: 15px 18px;
-  color: #13201d;
+  color: #071827;
   background: #d6f16a;
 }
 .button-quiet {
@@ -109,14 +117,14 @@ h1 {
 .signal-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  border-top: 1px solid #71847a;
-  border-bottom: 1px solid #71847a;
+  border-top: 1px solid #527180;
+  border-bottom: 1px solid #527180;
   animation: appear 0.8s 0.15s ease-out both;
 }
 .signal {
   min-height: 190px;
   padding: 25px 26px 25px 0;
-  border-right: 1px solid #71847a;
+  border-right: 1px solid #527180;
 }
 .signal + .signal {
   padding-left: 26px;
@@ -141,7 +149,7 @@ h1 {
 }
 .signal p {
   max-width: 220px;
-  color: #b9c5bb;
+  color: #b8c8cc;
   font:
     12px/1.55 "Courier New",
     monospace;
@@ -163,7 +171,7 @@ h1 {
 }
 footer {
   padding-top: 20px;
-  color: #83948a;
+  color: #829ca5;
 }
 footer a {
   color: #d6f16a;
