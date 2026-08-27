@@ -1,6 +1,38 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+const projectStructure = [
+  { name: "Deployable_MERN/", level: 0, type: "directory" },
+  { name: "server.js", level: 1, description: "Express server entry point" },
+  { name: "render.yaml", level: 1, description: "Render deployment config" },
+  {
+    name: "package.json",
+    level: 1,
+    description: "Root scripts and dependencies",
+  },
+  { name: "README.md", level: 1, description: "Project documentation" },
+  { name: "frontend/", level: 1, type: "directory" },
+  {
+    name: "package.json",
+    level: 2,
+    description: "Frontend dependencies and scripts",
+  },
+  { name: "index.html", level: 2, description: "Vite HTML entry" },
+  { name: "vite.config.js", level: 2, description: "Vite config" },
+  {
+    name: "src/",
+    level: 2,
+    description: "React application source",
+    type: "directory",
+  },
+  {
+    name: "public/",
+    level: 1,
+    description: "Static assets if added later",
+    type: "directory",
+  },
+];
+
 function App() {
   const [apiStatus, setApiStatus] = useState("Checking API");
 
@@ -57,12 +89,37 @@ function App() {
           </a>
           <a
             className="button button-primary"
-            href="https://github.com/w3aftab/Deployable-Express-React/archive/refs/heads/main.zip"
+            href="https://github.com/w3aftab/Deployable-Express-React/archive/e961c892437ef2340f6baf8d019a0e402b7b9886.zip"
             target="_blank"
             rel="noreferrer"
           >
             Download template <span aria-hidden="true">↓</span>
           </a>
+        </div>
+      </section>
+      <section className="structure" aria-labelledby="structure-title">
+        <div className="structure-heading">
+          <span className="signal-index">04 / PROJECT MAP</span>
+          <h2 id="structure-title">Project structure</h2>
+          <p>The documented foundation, ready to extend.</p>
+        </div>
+        <div className="tree" role="list">
+          {projectStructure.map((item) => (
+            <div
+              className={`tree-row ${item.type === "directory" ? "is-directory" : ""}`}
+              key={`${item.level}-${item.name}`}
+              role="listitem"
+              style={{ "--tree-level": item.level }}
+            >
+              <span className="tree-branch" aria-hidden="true">
+                {item.level === 0 ? "" : "├─"}
+              </span>
+              <span className="tree-name">{item.name}</span>
+              {item.description && (
+                <span className="tree-description"># {item.description}</span>
+              )}
+            </div>
+          ))}
         </div>
       </section>
       <section className="signal-grid">
