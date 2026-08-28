@@ -13,7 +13,7 @@ app.use(express.json());
 app.get("/api/health", (_request, response) => {
   response.json({
     status: "ok",
-    service: "deployable-express-react-api",
+    service: "deployable-express-react-scaffold-api",
     timestamp: new Date().toISOString(),
   });
 });
@@ -24,5 +24,7 @@ app.get("*splat", (_request, response) => {
 });
 
 app.listen(port, () => {
-  console.log(`Deployable-Express-React server listening on port ${port}`);
+  console.log(
+    `Deployable-Express-React-Scaffold server listening on port ${port}`
+  );
 });

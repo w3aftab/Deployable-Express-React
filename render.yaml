@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Deployable-Express-React
+    name: Deployable-Express-React-Scaffold
     runtime: node
     plan: free
     buildCommand: npm install && npm run build

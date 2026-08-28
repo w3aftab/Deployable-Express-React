@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 const projectStructure = [
-  { name: "Deployable_MERN/", level: 0, type: "directory" },
+  { name: "Deployable-Express-React-Scaffold/", level: 0, type: "directory" },
   { name: "server.js", level: 1, description: "Express server entry point" },
   { name: "render.yaml", level: 1, description: "Render deployment config" },
   {
@@ -50,7 +50,7 @@ function App() {
     <main className="shell">
       <nav className="nav">
         <span className="brand">
-          DEPLOYABLE EXPRESS REACT<span>/</span>
+          DEPLOYABLE EXPRESS REACT SCAFFOLD<span>/</span>
         </span>
         <span className="nav-meta">EXPRESS + REACT / 2026</span>
       </nav>
@@ -89,7 +89,7 @@ function App() {
           </a>
           <a
             className="button button-primary"
-            href="https://github.com/w3aftab/Deployable-Express-React/archive/e961c892437ef2340f6baf8d019a0e402b7b9886.zip"
+            href="https://github.com/w3aftab/Deployable-Express-React-Scaffold/archive/e961c892437ef2340f6baf8d019a0e402b7b9886.zip"
             target="_blank"
             rel="noreferrer"
           >
@@ -149,7 +149,7 @@ function App() {
         <span>READY WHEN YOU ARE</span>
         <span>BY AFTAB AHMED</span>
         <a
-          href="https://github.com/w3aftab/Deployable-Express-React"
+          href="https://github.com/w3aftab/Deployable-Express-React-Scaffold"
           target="_blank"
           rel="noreferrer"
         >

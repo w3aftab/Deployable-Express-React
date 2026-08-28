@@ -1,4 +1,4 @@
-# Deployable Express React
+# Deployable Express React Scaffold
 
 A clean full-stack starter template combining Express 5 on the backend and React 19 + Vite on the frontend. This scaffold is designed for quick local development and simple deployment to Render.
 
@@ -21,7 +21,7 @@ Author: Aftab Ahmed
 ## Project structure
 
 ```text
-Deployable_MERN/
+Deployable-Express-React-Scaffold/
 ├── server.js                # Express server entry point
 ├── render.yaml              # Render deployment config
 ├── package.json             # Root scripts and dependencies
@@ -44,8 +44,8 @@ Deployable_MERN/
 Clone the repository and open the project locally. Replace `<your-username>` with the GitHub account that owns the repository:
 
 ```bash
-git clone https://github.com/w3aftab/Deployable-Express-React.git
-cd Deployable-Express-React
+git clone https://github.com/w3aftab/Deployable-Express-React-Scaffold.git
+cd Deployable-Express-React-Scaffold
 ```
 
 You can also select **Code** and then **Download ZIP** on the GitHub repository page. Extract the ZIP file, open the project folder in VS Code, and continue with the installation steps below.
@@ -92,7 +92,7 @@ This project includes a Render configuration in `render.yaml`:
 ```yaml
 services:
   - type: web
-    name: Deployable-Express-React
+    name: Deployable-Express-React-Scaffold
     runtime: node
     plan: free
     buildCommand: npm install && npm run build
