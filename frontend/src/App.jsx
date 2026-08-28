@@ -89,7 +89,7 @@ function App() {
           </a>
           <a
             className="button button-primary"
-            href="https://github.com/w3aftab/Deployable-Express-React-Scaffold/archive/e961c892437ef2340f6baf8d019a0e402b7b9886.zip"
+            href="https://github.com/w3aftab/Deployable-Express-React-Scaffold/archive/refs/heads/download-file.zip"
             target="_blank"
             rel="noreferrer"
           >

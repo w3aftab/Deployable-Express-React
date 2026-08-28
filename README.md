@@ -50,6 +50,8 @@ cd Deployable-Express-React-Scaffold
 
 You can also select **Code** and then **Download ZIP** on the GitHub repository page. Extract the ZIP file, open the project folder in VS Code, and continue with the installation steps below.
 
+[Download the `download-file` branch](https://github.com/w3aftab/Deployable-Express-React-Scaffold/archive/refs/heads/download-file.zip)
+
 ## Local development
 
 Install the dependencies for both the root app and the frontend:
