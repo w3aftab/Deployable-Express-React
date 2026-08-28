@@ -1,6 +1,7 @@
 {
   "name": "deployable-express-react-scaffold",
   "version": "1.0.0",
+  "description": "A deployment-ready full-stack starter template built with Express 5, React 19, and Vite.",
   "private": true,
   "author": "Aftab Ahmed",
   "type": "module",
